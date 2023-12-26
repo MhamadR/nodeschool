@@ -12,4 +12,4 @@ app.set("views", filePath1 || filePath2);
 app.get("/home", (_, res) => {
   res.render("index", { date: new Date().toDateString() });
 });
-app.listen(port, () => console.log("Server is running on port 3000"));
+app.listen(port, () => console.log(`Server is running on port ${port}`));
